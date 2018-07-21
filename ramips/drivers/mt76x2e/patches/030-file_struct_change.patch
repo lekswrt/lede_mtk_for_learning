@@ -1,0 +1,12 @@
+diff -urN a/rlt_wifi/os/linux/rt_profile.c b/rlt_wifi/os/linux/rt_profile.c
+--- a/rlt_wifi/os/linux/rt_profile.c	2018-07-21 08:48:07.078343844 -0700
++++ b/rlt_wifi/os/linux/rt_profile.c	2018-07-21 08:48:45.405107220 -0700
+@@ -270,7 +270,7 @@
+ 		{
+ #ifndef OS_ABL_SUPPORT
+ 			// TODO: need to roll back when convert into OSABL code
+-				 fsize = (ULONG)srcf->f_dentry->d_inode->i_size;
++				 fsize = (ULONG)srcf->f_inode->i_size;
+ 				if (buf_size < (fsize + 1))
+ 					buf_size = fsize + 1;
+ #endif /* OS_ABL_SUPPORT */

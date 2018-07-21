@@ -1,0 +1,11 @@
+diff -urN a/rlt_wifi/ate/common/rt_qa.c b/rlt_wifi/ate/common/rt_qa.c
+--- a/rlt_wifi/ate/common/rt_qa.c	2018-07-21 09:19:57.325224979 -0700
++++ b/rlt_wifi/ate/common/rt_qa.c	2018-07-21 09:20:58.547169892 -0700
+@@ -25,6 +25,7 @@
+ 	--------	----------  ----------------------------------------------
+ 	Name		Date	    Modification logs
+ */
++#include <linux/sched/signal.h>
+ #include "rt_config.h"
+  
+ #ifdef RALINK_QA

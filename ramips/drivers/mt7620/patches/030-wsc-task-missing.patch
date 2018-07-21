@@ -1,0 +1,12 @@
+diff -urN a/src/common/wsc.c b/src/common/wsc.c
+--- a/src/common/wsc.c	2018-07-21 08:20:42.723405398 -0700
++++ b/src/common/wsc.c	2018-07-21 08:21:01.571543636 -0700
+@@ -29,6 +29,8 @@
+ 	Snowpin Lee 07-05-17        Do modifications and Add APIs for AP Client
+ */
+ 
++#include <linux/sched/task.h>
++#include <linux/sched/signal.h>
+ #include    "rt_config.h"
+ 
+ #ifdef WSC_INCLUDED
